@@ -7,11 +7,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clima</title>
   <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div class="aviao"></div>
+
+  <section class="tempo">
+    <h1 class="cityName"></h1>
+    <div class="tempo-conteudo">
+      <div>
+        <div class="temp-item">
+          <p>Temperatura</p>
+          <span class="temperatura"></span>
+        </div>
+
+        <div>
+          <p>Vento</p>
+          <span class="vento"></span>
+        </div>
+
+        <div>
+          <p>Descrição</p>
+          <span class="descricao"></span>
+        </div>
+      </div>
+
+      <picture>
+        <img src="./img/sunny.png" alt="">
+      </picture>
+    </div>
+
+    </div>
+  </section>
+
   <select name="" id="">
+    <option disabled hidden selected>Selecione</option>
     <option value="1">Paraná</option>
     <option value="2">Bahia</option>
     <option value="3">São Paulo</option>
