@@ -2,3 +2,76 @@
   padding: 0px;
   margin: 0px;
 }
+
+body {
+  background: rgba(0, 162, 255, 0.315);
+  display: grid;
+  font-family: "Antonio";
+  color: white;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  justify-self: center;
+  animation: animation 2s ease-in-out infinite;
+  animation-direction: alternate;
+}
+
+picture {
+  justify-self: center;
+  align-self: center;
+}
+
+select {
+  text-align: center;
+  grid-row: 1;
+  align-self: start;
+  padding: 15px 0px;
+  background: none;
+  border: 1px solid white;
+}
+
+@keyframes animation {
+  from {
+    transform: translate3d(0, -15px, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.tempo {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.tempo-conteudo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  font-size: 1.3rem;
+  gap: 30px;
+  align-items: center;
+  justify-items: center;
+}
+
+.tempo-conteudo div:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+.tempo-conteudo div:nth-child(2),
+.tempo-conteudo div:last-child {
+  font-size: 2rem;
+}
+
+.temp-item {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.cityName {
+  font-size: 2.5rem;
+  margin-top: 10px;
+}
