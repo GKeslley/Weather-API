@@ -75,3 +75,18 @@ select {
   font-size: 2.5rem;
   margin-top: 10px;
 }
+
+@media (max-width: 800px) {
+  .tempo-conteudo {
+    grid-template-columns: 1fr;
+  }
+  .cityName {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .temp-item {
+    font-size: 3rem;
+  }
+}
